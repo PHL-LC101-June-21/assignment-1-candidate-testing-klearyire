@@ -8,7 +8,7 @@ let candidateName = input.question("What is your name? ");
 
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question = "Who was the first American woman in space?";
+let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = input.question("Who was the first American woman in space? ");
 
@@ -23,6 +23,7 @@ let candidateAnswers = input.question["True or false: 5 kilometers == 5000 meter
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
+  
   let candidateName = input.question("What is your name? ");
 }
 
@@ -30,8 +31,6 @@ function askForName() {
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-let question = "Who was the first American woman in space?";
-let correctAnswer = "Sally Ride";
 let candidateAnswer = input.question("Who was the first American woman in space? ");
 }
 
@@ -39,7 +38,11 @@ let candidateAnswer = input.question("Who was the first American woman in space?
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-
+  if (candidateAnswer = "Sally Ride") {
+  console.log("Correct! ");
+  } else {
+  console.log("Incorrect! The correct answer is Sally Ride. ");
+  }
 
   let grade;
   
@@ -50,7 +53,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
-  
+  let candidateName = input.question("What is your name? ");
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
